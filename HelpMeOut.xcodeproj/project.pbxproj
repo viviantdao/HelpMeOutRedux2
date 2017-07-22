@@ -13,6 +13,7 @@
 		5F5645191F239B8300C4D645 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F5645181F239B8300C4D645 /* Assets.xcassets */; };
 		5F56451C1F239B8300C4D645 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F56451A1F239B8300C4D645 /* LaunchScreen.storyboard */; };
 		5F5645271F239B8300C4D645 /* HelpMeOutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5645261F239B8300C4D645 /* HelpMeOutTests.swift */; };
+		5FDAF20B1F23A59A00E77475 /* LoginSelector.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FDAF20A1F23A59A00E77475 /* LoginSelector.storyboard */; };
 		C5E7F07280C09E0AAEF941C1 /* Pods_HelpMeOut.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66B4937F0D4B8AF7BF0CD20F /* Pods_HelpMeOut.framework */; };
 		F18E7D42D53E8E5DC80627C9 /* Pods_HelpMeOutTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE2261C9E684CCAE3A1EBC14 /* Pods_HelpMeOutTests.framework */; };
 /* End PBXBuildFile section */
@@ -39,6 +40,7 @@
 		5F5645221F239B8300C4D645 /* HelpMeOutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelpMeOutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F5645261F239B8300C4D645 /* HelpMeOutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpMeOutTests.swift; sourceTree = "<group>"; };
 		5F5645281F239B8300C4D645 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FDAF20A1F23A59A00E77475 /* LoginSelector.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginSelector.storyboard; sourceTree = "<group>"; };
 		66B4937F0D4B8AF7BF0CD20F /* Pods_HelpMeOut.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelpMeOut.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B86D7192345297DE878460EA /* Pods-HelpMeOutTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelpMeOutTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HelpMeOutTests/Pods-HelpMeOutTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DB3E906ED615A8273212D413 /* Pods-HelpMeOutTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelpMeOutTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelpMeOutTests/Pods-HelpMeOutTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 		5F5645051F239B8300C4D645 = {
 			isa = PBXGroup;
 			children = (
+				5FDAF2091F23A52900E77475 /* Login */,
 				5F5645101F239B8300C4D645 /* HelpMeOut */,
 				5F5645251F239B8300C4D645 /* HelpMeOutTests */,
 				5F56450F1F239B8300C4D645 /* Products */,
@@ -106,6 +109,14 @@
 				5F5645281F239B8300C4D645 /* Info.plist */,
 			);
 			path = HelpMeOutTests;
+			sourceTree = "<group>";
+		};
+		5FDAF2091F23A52900E77475 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				5FDAF20A1F23A59A00E77475 /* LoginSelector.storyboard */,
+			);
+			name = Login;
 			sourceTree = "<group>";
 		};
 		827DFCB40EF1D2C749FB44AB /* Pods */ = {
@@ -218,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F56451C1F239B8300C4D645 /* LaunchScreen.storyboard in Resources */,
+				5FDAF20B1F23A59A00E77475 /* LoginSelector.storyboard in Resources */,
 				5F5645191F239B8300C4D645 /* Assets.xcassets in Resources */,
 				5F5645171F239B8300C4D645 /* Main.storyboard in Resources */,
 			);
@@ -541,6 +553,7 @@
 				5F56452D1F239B8300C4D645 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5F56452E1F239B8300C4D645 /* Build configuration list for PBXNativeTarget "HelpMeOutTests" */ = {
 			isa = XCConfigurationList;
@@ -549,6 +562,7 @@
 				5F5645301F239B8300C4D645 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
