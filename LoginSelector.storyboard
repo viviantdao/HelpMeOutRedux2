@@ -6,6 +6,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -25,35 +27,45 @@
                                 <rect key="frame" x="0.0" y="64" width="414" height="672"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="be1-hg-cZ3" userLabel="FacebookButton">
-                                <rect key="frame" x="61" y="388" width="292" height="69"/>
-                                <state key="normal" backgroundImage="FacebookLogin"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uoD-jv-lQi" userLabel="facebookButton" customClass="SocialMediaLoginButton" customModule="HelpMeOut" customModuleProvider="target">
+                                <rect key="frame" x="59" y="369" width="297" height="62"/>
+                                <state key="normal" backgroundImage="facebook"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="loginType" value="facebook"/>
+                                </userDefinedRuntimeAttributes>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PU3-hO-h7E" userLabel="GoogleButton">
-                                <rect key="frame" x="61" y="478" width="292" height="69"/>
-                                <state key="normal" backgroundImage="GoogleLogin"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GXk-1J-Nhe" userLabel="googleButton" customClass="SocialMediaLoginButton" customModule="HelpMeOut" customModuleProvider="target">
+                                <rect key="frame" x="59" y="456" width="297" height="62"/>
+                                <state key="normal" backgroundImage="google"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="loginType" value="google"/>
+                                </userDefinedRuntimeAttributes>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V79-MM-LBK" userLabel="OutlookButton">
-                                <rect key="frame" x="61" y="571" width="292" height="69"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LkC-3j-nGI" userLabel="outlookButton" customClass="SocialMediaLoginButton" customModule="HelpMeOut" customModuleProvider="target">
+                                <rect key="frame" x="59" y="546" width="297" height="62"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="69" id="N5Z-mH-bfs"/>
-                                    <constraint firstAttribute="width" constant="292" id="aXd-vs-2ZE"/>
+                                    <constraint firstAttribute="width" secondItem="LkC-3j-nGI" secondAttribute="height" multiplier="297:62" id="h2n-Ub-3H6"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="OutlookLogin"/>
+                                <state key="normal" backgroundImage="outlook"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="loginType" value="outlook"/>
+                                </userDefinedRuntimeAttributes>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="V79-MM-LBK" firstAttribute="centerX" secondItem="mi8-dF-Fbb" secondAttribute="centerX" id="6JW-Qg-YqS"/>
-                            <constraint firstItem="be1-hg-cZ3" firstAttribute="width" secondItem="V79-MM-LBK" secondAttribute="width" id="8w0-Xm-iJT"/>
-                            <constraint firstItem="be1-hg-cZ3" firstAttribute="centerX" secondItem="mi8-dF-Fbb" secondAttribute="centerX" id="JPp-Cf-7d3"/>
-                            <constraint firstItem="V79-MM-LBK" firstAttribute="top" secondItem="PU3-hO-h7E" secondAttribute="bottom" constant="24" id="N66-zz-YVp"/>
-                            <constraint firstItem="be1-hg-cZ3" firstAttribute="height" secondItem="V79-MM-LBK" secondAttribute="height" id="SHQ-TU-xhE"/>
-                            <constraint firstItem="V79-MM-LBK" firstAttribute="top" secondItem="be1-hg-cZ3" secondAttribute="bottom" constant="114" id="cLy-zA-fkV"/>
-                            <constraint firstItem="PU3-hO-h7E" firstAttribute="centerX" secondItem="mi8-dF-Fbb" secondAttribute="centerX" id="f6I-Ma-Hxy"/>
-                            <constraint firstItem="VZO-Kz-EUz" firstAttribute="top" secondItem="V79-MM-LBK" secondAttribute="bottom" constant="96" id="jXK-BJ-FAZ"/>
-                            <constraint firstItem="PU3-hO-h7E" firstAttribute="height" secondItem="V79-MM-LBK" secondAttribute="height" id="lqe-0J-gdf"/>
-                            <constraint firstItem="PU3-hO-h7E" firstAttribute="width" secondItem="V79-MM-LBK" secondAttribute="width" id="zub-Nn-16v"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="LkC-3j-nGI" secondAttribute="trailing" constant="38" id="7eK-rq-Yus"/>
+                            <constraint firstItem="GXk-1J-Nhe" firstAttribute="height" secondItem="LkC-3j-nGI" secondAttribute="height" id="I0V-Bk-p0m"/>
+                            <constraint firstItem="VZO-Kz-EUz" firstAttribute="top" secondItem="LkC-3j-nGI" secondAttribute="bottom" constant="128" id="KBc-ch-oWH"/>
+                            <constraint firstItem="uoD-jv-lQi" firstAttribute="height" secondItem="GXk-1J-Nhe" secondAttribute="height" id="MJQ-A0-J9D"/>
+                            <constraint firstItem="GXk-1J-Nhe" firstAttribute="centerX" secondItem="LkC-3j-nGI" secondAttribute="centerX" id="SDn-jS-FUV"/>
+                            <constraint firstItem="GXk-1J-Nhe" firstAttribute="width" secondItem="LkC-3j-nGI" secondAttribute="width" id="fVN-8h-I5K"/>
+                            <constraint firstItem="LkC-3j-nGI" firstAttribute="centerX" secondItem="mi8-dF-Fbb" secondAttribute="centerX" id="pP3-AL-Qb1"/>
+                            <constraint firstItem="uoD-jv-lQi" firstAttribute="width" secondItem="GXk-1J-Nhe" secondAttribute="width" id="sW5-Um-QuA"/>
+                            <constraint firstItem="LkC-3j-nGI" firstAttribute="top" secondItem="GXk-1J-Nhe" secondAttribute="bottom" constant="28" id="sd8-Tc-Gu0"/>
+                            <constraint firstItem="uoD-jv-lQi" firstAttribute="centerX" secondItem="GXk-1J-Nhe" secondAttribute="centerX" id="tiC-pE-XN2"/>
+                            <constraint firstItem="GXk-1J-Nhe" firstAttribute="top" secondItem="uoD-jv-lQi" secondAttribute="bottom" constant="25" id="vIB-EG-Ntg"/>
+                            <constraint firstItem="LkC-3j-nGI" firstAttribute="leading" secondItem="mi8-dF-Fbb" secondAttribute="leadingMargin" constant="39" id="vxF-J9-kYN"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="X2s-5o-qKj"/>
@@ -86,9 +98,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="FacebookLogin" width="823" height="195"/>
-        <image name="GoogleLogin" width="823" height="195"/>
         <image name="MainBackground" width="387" height="694"/>
-        <image name="OutlookLogin" width="823" height="195"/>
+        <image name="facebook" width="823" height="195"/>
+        <image name="google" width="823" height="195"/>
+        <image name="outlook" width="823" height="195"/>
     </resources>
 </document>
