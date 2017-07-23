@@ -14,7 +14,7 @@
         <!--LoginSelectorViewController-->
         <scene sceneID="66a-8b-9KR">
             <objects>
-                <viewController title="Help Me Out" id="DRC-K6-YJ9" userLabel="LoginSelectorViewController" customClass="LoginSelector" customModule="HelpMeOut" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginSelector" title="Help Me Out" id="DRC-K6-YJ9" userLabel="LoginSelectorViewController" customClass="LoginSelector" customModule="HelpMeOut" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="RFC-ZD-WS8"/>
                         <viewControllerLayoutGuide type="bottom" id="VZO-Kz-EUz"/>
@@ -78,10 +78,21 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="X2s-5o-qKj"/>
+                    <connections>
+                        <segue destination="EbO-FL-Fli" kind="show" identifier="LoginPageSegue" id="J84-jc-RA7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dDS-1H-qGd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="959.4202898550725" y="150.81521739130437"/>
+        </scene>
+        <!--LoginPage-->
+        <scene sceneID="RhY-d8-Ds0">
+            <objects>
+                <viewControllerPlaceholder storyboardName="LoginPage" id="EbO-FL-Fli" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rw7-K9-cnD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1726" y="-130"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="tOA-tf-Yk2">
