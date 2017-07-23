@@ -14,7 +14,7 @@
         <!--LoginSelectorViewController-->
         <scene sceneID="66a-8b-9KR">
             <objects>
-                <viewController title="Help Me Out" id="DRC-K6-YJ9" userLabel="LoginSelectorViewController" sceneMemberID="viewController">
+                <viewController title="Help Me Out" id="DRC-K6-YJ9" userLabel="LoginSelectorViewController" customClass="LoginSelector" customModule="HelpMeOut" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="RFC-ZD-WS8"/>
                         <viewControllerLayoutGuide type="bottom" id="VZO-Kz-EUz"/>
@@ -33,6 +33,9 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="loginType" value="facebook"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="loginButtonClicked:" destination="DRC-K6-YJ9" eventType="touchUpInside" id="1Iz-56-g53"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GXk-1J-Nhe" userLabel="googleButton" customClass="SocialMediaLoginButton" customModule="HelpMeOut" customModuleProvider="target">
                                 <rect key="frame" x="59" y="456" width="297" height="62"/>
@@ -40,6 +43,9 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="loginType" value="google"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="loginButtonClicked:" destination="DRC-K6-YJ9" eventType="touchUpInside" id="n85-bd-AzT"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LkC-3j-nGI" userLabel="outlookButton" customClass="SocialMediaLoginButton" customModule="HelpMeOut" customModuleProvider="target">
                                 <rect key="frame" x="59" y="546" width="297" height="62"/>
@@ -50,6 +56,9 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="loginType" value="outlook"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="loginButtonClicked:" destination="DRC-K6-YJ9" eventType="touchUpInside" id="teO-1w-ika"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

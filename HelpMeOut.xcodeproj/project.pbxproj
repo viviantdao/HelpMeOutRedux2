@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F37087B1F2418A9006AAD5B /* LoginSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F37087A1F2418A9006AAD5B /* LoginSelector.swift */; };
+		5F37087F1F241CE9006AAD5B /* ViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F37087E1F241CE9006AAD5B /* ViewControllerExtensions.swift */; };
 		5F5645121F239B8300C4D645 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5645111F239B8300C4D645 /* AppDelegate.swift */; };
 		5F5645141F239B8300C4D645 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5645131F239B8300C4D645 /* ViewController.swift */; };
 		5F5645171F239B8300C4D645 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F5645151F239B8300C4D645 /* Main.storyboard */; };
@@ -32,6 +34,8 @@
 
 /* Begin PBXFileReference section */
 		138C051F2BDB1BC8A5E959DA /* Pods-HelpMeOut.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelpMeOut.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HelpMeOut/Pods-HelpMeOut.debug.xcconfig"; sourceTree = "<group>"; };
+		5F37087A1F2418A9006AAD5B /* LoginSelector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginSelector.swift; sourceTree = "<group>"; };
+		5F37087E1F241CE9006AAD5B /* ViewControllerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerExtensions.swift; sourceTree = "<group>"; };
 		5F56450E1F239B8300C4D645 /* HelpMeOut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelpMeOut.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F5645111F239B8300C4D645 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5F5645131F239B8300C4D645 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -72,9 +76,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5F37087C1F241B39006AAD5B /* shared */ = {
+			isa = PBXGroup;
+			children = (
+				5F37087D1F241B4C006AAD5B /* uiUtilities */,
+			);
+			name = shared;
+			sourceTree = "<group>";
+		};
+		5F37087D1F241B4C006AAD5B /* uiUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				5F37087E1F241CE9006AAD5B /* ViewControllerExtensions.swift */,
+			);
+			name = uiUtilities;
+			sourceTree = "<group>";
+		};
+		5F3708801F241E3F006AAD5B /* LoginSelector */ = {
+			isa = PBXGroup;
+			children = (
+				5FDAF20A1F23A59A00E77475 /* LoginSelector.storyboard */,
+				5F37087A1F2418A9006AAD5B /* LoginSelector.swift */,
+			);
+			name = LoginSelector;
+			sourceTree = "<group>";
+		};
+		5F3708811F241E62006AAD5B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				5FDAF20E1F23BD3500E77475 /* SocialMediaLoginType.swift */,
+				5FDAF20C1F23BCD900E77475 /* SocialMediaLoginButton.swift */,
+			);
+			name = Components;
+			sourceTree = "<group>";
+		};
 		5F5645051F239B8300C4D645 = {
 			isa = PBXGroup;
 			children = (
+				5F37087C1F241B39006AAD5B /* shared */,
 				5FDAF2091F23A52900E77475 /* Login */,
 				5F5645101F239B8300C4D645 /* HelpMeOut */,
 				5F5645251F239B8300C4D645 /* HelpMeOutTests */,
@@ -118,9 +157,8 @@
 		5FDAF2091F23A52900E77475 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				5FDAF20A1F23A59A00E77475 /* LoginSelector.storyboard */,
-				5FDAF20C1F23BCD900E77475 /* SocialMediaLoginButton.swift */,
-				5FDAF20E1F23BD3500E77475 /* SocialMediaLoginType.swift */,
+				5F3708811F241E62006AAD5B /* Components */,
+				5F3708801F241E3F006AAD5B /* LoginSelector */,
 			);
 			name = Login;
 			sourceTree = "<group>";
@@ -349,8 +387,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F5645141F239B8300C4D645 /* ViewController.swift in Sources */,
+				5F37087B1F2418A9006AAD5B /* LoginSelector.swift in Sources */,
 				5F5645121F239B8300C4D645 /* AppDelegate.swift in Sources */,
 				5FDAF20D1F23BCD900E77475 /* SocialMediaLoginButton.swift in Sources */,
+				5F37087F1F241CE9006AAD5B /* ViewControllerExtensions.swift in Sources */,
 				5FDAF20F1F23BD3500E77475 /* SocialMediaLoginType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
