@@ -17,7 +17,31 @@ class LoginPage: UIViewController{
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        socialMediaImage.image = UIImage(named: "facebookLogo")
+        SetSocialMediaInformation()
     }
+    
+    private func SetSocialMediaInformation(){
+       
+        if let loginType = LoginService.Instance.LoginType{
+            var login:String
+            
+            switch loginType {
+                
+            case .facebook:
+                login = "facebook"
+            case .google:
+                login = "google"
+            case .outlook:
+                login = "outlook"
+                
+            }
+            
+            socialMediaImage.image = UIImage(named: "\(login)Logo")
+            self.title = "\(login.capitalized) Login"
+        }
+        
+    }
+    
+    
     
 }

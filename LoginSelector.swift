@@ -12,20 +12,14 @@ class LoginSelector: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.title = "Login or Register"
+        self.title = "Login"
     }
     
     
     @IBAction func loginButtonClicked(_ sender: SocialMediaLoginButton) {
-        switch sender.SocialMediaType {
-        case .facebook:
-            print("facebook")
-        case .google:
-            print("google")
-        case .outlook:
-            print("outlook")
-        }
         
+        LoginService.Instance.SetLoginType(type: sender.SocialMediaType)
         self.navigationController?.pushViewController(UIViewController.GetInstance(for: LoginPage.self)!, animated: true)
+        
     }
 }

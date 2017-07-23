@@ -17,6 +17,10 @@
 		5F5645271F239B8300C4D645 /* HelpMeOutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5645261F239B8300C4D645 /* HelpMeOutTests.swift */; };
 		5F577B2B1F24267A0030DD9C /* LoginPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F577B2A1F24267A0030DD9C /* LoginPage.storyboard */; };
 		5F577B2D1F24ED510030DD9C /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F577B2C1F24ED510030DD9C /* LoginPage.swift */; };
+		5F577B311F24FDEC0030DD9C /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F577B301F24FDEC0030DD9C /* LoginService.swift */; };
+		5F577B331F24FF020030DD9C /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F577B321F24FF020030DD9C /* LoginViewModel.swift */; };
+		5F577B351F2500FD0030DD9C /* BearerToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F577B341F2500FD0030DD9C /* BearerToken.swift */; };
+		5F577B371F2510ED0030DD9C /* LoginServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F577B361F2510ED0030DD9C /* LoginServiceError.swift */; };
 		5FDAF20B1F23A59A00E77475 /* LoginSelector.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FDAF20A1F23A59A00E77475 /* LoginSelector.storyboard */; };
 		5FDAF20D1F23BCD900E77475 /* SocialMediaLoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDAF20C1F23BCD900E77475 /* SocialMediaLoginButton.swift */; };
 		5FDAF20F1F23BD3500E77475 /* SocialMediaLoginType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDAF20E1F23BD3500E77475 /* SocialMediaLoginType.swift */; };
@@ -50,6 +54,10 @@
 		5F5645281F239B8300C4D645 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F577B2A1F24267A0030DD9C /* LoginPage.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginPage.storyboard; sourceTree = "<group>"; };
 		5F577B2C1F24ED510030DD9C /* LoginPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
+		5F577B301F24FDEC0030DD9C /* LoginService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		5F577B321F24FF020030DD9C /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		5F577B341F2500FD0030DD9C /* BearerToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BearerToken.swift; sourceTree = "<group>"; };
+		5F577B361F2510ED0030DD9C /* LoginServiceError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginServiceError.swift; sourceTree = "<group>"; };
 		5FDAF20A1F23A59A00E77475 /* LoginSelector.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginSelector.storyboard; sourceTree = "<group>"; };
 		5FDAF20C1F23BCD900E77475 /* SocialMediaLoginButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialMediaLoginButton.swift; sourceTree = "<group>"; };
 		5FDAF20E1F23BD3500E77475 /* SocialMediaLoginType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialMediaLoginType.swift; sourceTree = "<group>"; };
@@ -112,7 +120,6 @@
 		5F3708811F241E62006AAD5B /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				5FDAF20E1F23BD3500E77475 /* SocialMediaLoginType.swift */,
 				5FDAF20C1F23BCD900E77475 /* SocialMediaLoginButton.swift */,
 			);
 			name = Components;
@@ -171,8 +178,21 @@
 		5F577B2E1F24F54A0030DD9C /* services */ = {
 			isa = PBXGroup;
 			children = (
+				5F577B2F1F24FDD50030DD9C /* LoginService */,
 			);
 			name = services;
+			sourceTree = "<group>";
+		};
+		5F577B2F1F24FDD50030DD9C /* LoginService */ = {
+			isa = PBXGroup;
+			children = (
+				5FDAF20E1F23BD3500E77475 /* SocialMediaLoginType.swift */,
+				5F577B301F24FDEC0030DD9C /* LoginService.swift */,
+				5F577B321F24FF020030DD9C /* LoginViewModel.swift */,
+				5F577B341F2500FD0030DD9C /* BearerToken.swift */,
+				5F577B361F2510ED0030DD9C /* LoginServiceError.swift */,
+			);
+			name = LoginService;
 			sourceTree = "<group>";
 		};
 		5FDAF2091F23A52900E77475 /* Login */ = {
@@ -413,9 +433,13 @@
 				5F37087B1F2418A9006AAD5B /* LoginSelector.swift in Sources */,
 				5F5645121F239B8300C4D645 /* AppDelegate.swift in Sources */,
 				5FDAF20D1F23BCD900E77475 /* SocialMediaLoginButton.swift in Sources */,
+				5F577B351F2500FD0030DD9C /* BearerToken.swift in Sources */,
 				5F577B2D1F24ED510030DD9C /* LoginPage.swift in Sources */,
 				5F37087F1F241CE9006AAD5B /* ViewControllerExtensions.swift in Sources */,
 				5FDAF20F1F23BD3500E77475 /* SocialMediaLoginType.swift in Sources */,
+				5F577B311F24FDEC0030DD9C /* LoginService.swift in Sources */,
+				5F577B371F2510ED0030DD9C /* LoginServiceError.swift in Sources */,
+				5F577B331F24FF020030DD9C /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
