@@ -7,8 +7,15 @@
 //
 
 import UIKit
+import Cosmos
 
 class ProfileReviewTableViewCell: UITableViewCell {
+    
+    @IBOutlet weak var profileImage: UIImageView!
+    @IBOutlet weak var profileName: UILabel!
+    @IBOutlet weak var comment: UILabel!
+    @IBOutlet weak var time: UILabel!
+    @IBOutlet weak var starRating: CosmosView!
     
     
 }

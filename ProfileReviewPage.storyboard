@@ -33,28 +33,60 @@
                                                 <constraint firstAttribute="width" secondItem="0aG-6n-XyG" secondAttribute="height" multiplier="64:57" id="qOU-Ac-UDA"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lfb-eh-1q1">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lfb-eh-1q1">
                                             <rect key="frame" x="80" y="8" width="131" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mek-oe-2pc">
-                                            <rect key="frame" x="80" y="43" width="174" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="comment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mek-oe-2pc">
+                                            <rect key="frame" x="80" y="43" width="156" height="13.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                            <nil key="textColor"/>
+                                            <color key="textColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="time" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cRg-Q3-vl6">
+                                            <rect key="frame" x="325" y="43" width="42" height="13.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                            <color key="textColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ae6-o2-T22" customClass="CosmosView" customModule="Cosmos">
+                                            <rect key="frame" x="243" y="7" width="124" height="20"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="image" keyPath="filledImage" value="GoldStar"/>
+                                                <userDefinedRuntimeAttribute type="image" keyPath="emptyImage" value="GoldStarEmpty"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
                                     </subviews>
                                     <constraints>
                                         <constraint firstAttribute="trailingMargin" secondItem="0aG-6n-XyG" secondAttribute="trailing" constant="295" id="6gv-1F-J1G"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="mek-oe-2pc" secondAttribute="trailing" constant="131" id="9z3-M3-5Q6"/>
+                                        <constraint firstItem="cRg-Q3-vl6" firstAttribute="top" secondItem="mek-oe-2pc" secondAttribute="top" id="ABI-Df-x1u"/>
+                                        <constraint firstItem="Ae6-o2-T22" firstAttribute="leading" secondItem="lfb-eh-1q1" secondAttribute="trailing" constant="32" id="Bxo-uC-Cqh"/>
                                         <constraint firstItem="0aG-6n-XyG" firstAttribute="top" secondItem="0ba-a0-0SB" secondAttribute="topMargin" constant="-1" id="HBg-GF-whw"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="lfb-eh-1q1" secondAttribute="trailing" constant="156" id="LyE-7T-uGb"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="Ae6-o2-T22" secondAttribute="trailing" id="NWL-dU-8e8"/>
                                         <constraint firstAttribute="leadingMargin" secondItem="0aG-6n-XyG" secondAttribute="leading" id="Tvs-IK-XtE"/>
+                                        <constraint firstItem="mek-oe-2pc" firstAttribute="top" secondItem="lfb-eh-1q1" secondAttribute="bottom" constant="14" id="U8Y-oL-OjK"/>
+                                        <constraint firstItem="cRg-Q3-vl6" firstAttribute="leading" secondItem="mek-oe-2pc" secondAttribute="trailing" constant="89" id="a94-Ny-gpG"/>
+                                        <constraint firstItem="Ae6-o2-T22" firstAttribute="top" secondItem="0ba-a0-0SB" secondAttribute="topMargin" constant="-1" id="aFV-nz-WmD"/>
+                                        <constraint firstAttribute="topMargin" secondItem="lfb-eh-1q1" secondAttribute="top" id="b4h-xS-5bX"/>
+                                        <constraint firstItem="mek-oe-2pc" firstAttribute="leading" secondItem="lfb-eh-1q1" secondAttribute="leading" id="g05-Pa-K6X"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="0aG-6n-XyG" secondAttribute="bottom" constant="0.5" id="rYZ-yQ-fmc"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="cRg-Q3-vl6" secondAttribute="trailing" id="vpS-mH-Ap2"/>
+                                        <constraint firstItem="cRg-Q3-vl6" firstAttribute="height" secondItem="mek-oe-2pc" secondAttribute="height" id="wsm-TJ-iAV"/>
+                                        <constraint firstItem="lfb-eh-1q1" firstAttribute="leading" secondItem="0ba-a0-0SB" secondAttribute="leadingMargin" constant="72" id="yLH-rx-Ibg"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="comment" destination="mek-oe-2pc" id="KcD-0H-JxB"/>
+                                    <outlet property="profileImage" destination="0aG-6n-XyG" id="dso-kn-LhQ"/>
+                                    <outlet property="profileName" destination="lfb-eh-1q1" id="GeR-pg-8gH"/>
+                                    <outlet property="starRating" destination="Ae6-o2-T22" id="0m1-sc-6Nt"/>
+                                    <outlet property="time" destination="cRg-Q3-vl6" id="p36-fT-SQ7"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -68,4 +100,8 @@
             <point key="canvasLocation" x="156" y="281.10944527736132"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="GoldStar" width="53" height="51"/>
+        <image name="GoldStarEmpty" width="53" height="51"/>
+    </resources>
 </document>
