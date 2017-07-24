@@ -14,7 +14,7 @@
         <!--Profile Page-->
         <scene sceneID="zP1-QI-7Ng">
             <objects>
-                <viewController id="g0X-ea-Xy6" customClass="ProfilePage" customModule="HelpMeOut" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProfilePage" id="g0X-ea-Xy6" customClass="ProfilePage" customModule="HelpMeOut" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="eeS-Wo-zZT"/>
                         <viewControllerLayoutGuide type="bottom" id="0mA-eX-4Tf"/>

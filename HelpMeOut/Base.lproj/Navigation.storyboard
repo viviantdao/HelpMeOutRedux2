@@ -65,6 +65,9 @@
                                 <state key="normal" title="My Profile">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="profileButtonClicked:" destination="kNd-SU-0Lm" eventType="touchUpInside" id="8Vm-h0-J6e"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yeu-3F-vH2">
                                 <rect key="frame" x="84" y="531" width="275" height="53"/>

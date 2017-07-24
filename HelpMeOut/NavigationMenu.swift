@@ -22,5 +22,9 @@ class NavigationMenu: UIViewController {
     }
     
     
+    
+    @IBAction func profileButtonClicked(_ sender: UIButton) {
+        self.navigationController?.pushViewController(UIViewController.GetInstance(for: ProfilePage.self)!, animated: true)
+    }
 
 }
