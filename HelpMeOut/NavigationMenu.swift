@@ -1,25 +1,26 @@
 //
-//  ViewController.swift
+//  NavigationMenu.swift
 //  HelpMeOut
 //
-//  Created by Young Tech on 7/22/17.
+//  Created by Young Tech on 7/23/17.
 //  Copyright © 2017 Young Tech. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class NavigationMenu: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    
 
 }
-

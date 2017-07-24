@@ -36,6 +36,9 @@ class LoginPage: UIViewController{
             LoginService.Instance.Login(loginInfo: LoginViewModel(username: (self.userNameText?.text!)!, password: (self.passwordText?.text!)!)
                 , callback: { (token) in
                     self.activityIndicatorView.stopAnimating()
+                    
+                    let mainView = UIViewController.GetInstance(for: MapPage.self)
+                    self.navigationController?.viewControllers = [mainView!]
                     self.navigationController?.popToRootViewController(animated: true)
             })
             

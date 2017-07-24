@@ -9,18 +9,21 @@
 /* Begin PBXBuildFile section */
 		5F37087B1F2418A9006AAD5B /* LoginSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F37087A1F2418A9006AAD5B /* LoginSelector.swift */; };
 		5F37087F1F241CE9006AAD5B /* ViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F37087E1F241CE9006AAD5B /* ViewControllerExtensions.swift */; };
+		5F55B6491F25A4DD0075C46C /* AppNavigationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F55B6481F25A4DD0075C46C /* AppNavigationHelper.swift */; };
+		5F55B64D1F25B15E0075C46C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F55B64C1F25B15E0075C46C /* CoreLocation.framework */; };
+		5F55B64F1F25B1690075C46C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F55B64E1F25B1690075C46C /* MapKit.framework */; };
 		5F5645121F239B8300C4D645 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5645111F239B8300C4D645 /* AppDelegate.swift */; };
-		5F5645141F239B8300C4D645 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5645131F239B8300C4D645 /* ViewController.swift */; };
-		5F5645171F239B8300C4D645 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F5645151F239B8300C4D645 /* Main.storyboard */; };
+		5F5645171F239B8300C4D645 /* Navigation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F5645151F239B8300C4D645 /* Navigation.storyboard */; };
 		5F5645191F239B8300C4D645 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F5645181F239B8300C4D645 /* Assets.xcassets */; };
-		5F56451C1F239B8300C4D645 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F56451A1F239B8300C4D645 /* LaunchScreen.storyboard */; };
 		5F5645271F239B8300C4D645 /* HelpMeOutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5645261F239B8300C4D645 /* HelpMeOutTests.swift */; };
 		5F577B2B1F24267A0030DD9C /* LoginPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F577B2A1F24267A0030DD9C /* LoginPage.storyboard */; };
 		5F577B2D1F24ED510030DD9C /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F577B2C1F24ED510030DD9C /* LoginPage.swift */; };
 		5F577B311F24FDEC0030DD9C /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F577B301F24FDEC0030DD9C /* LoginService.swift */; };
 		5F577B331F24FF020030DD9C /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F577B321F24FF020030DD9C /* LoginViewModel.swift */; };
 		5F577B351F2500FD0030DD9C /* BearerToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F577B341F2500FD0030DD9C /* BearerToken.swift */; };
-		5F577B371F2510ED0030DD9C /* LoginServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F577B361F2510ED0030DD9C /* LoginServiceError.swift */; };
+		5F577B3C1F2596350030DD9C /* MapPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F577B3B1F2596350030DD9C /* MapPage.storyboard */; };
+		5F577B3E1F25966C0030DD9C /* MapPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F577B3D1F25966C0030DD9C /* MapPage.swift */; };
+		5F577B401F259A180030DD9C /* NavigationMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F577B3F1F259A180030DD9C /* NavigationMenu.swift */; };
 		5FDAF20B1F23A59A00E77475 /* LoginSelector.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FDAF20A1F23A59A00E77475 /* LoginSelector.storyboard */; };
 		5FDAF20D1F23BCD900E77475 /* SocialMediaLoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDAF20C1F23BCD900E77475 /* SocialMediaLoginButton.swift */; };
 		5FDAF20F1F23BD3500E77475 /* SocialMediaLoginType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDAF20E1F23BD3500E77475 /* SocialMediaLoginType.swift */; };
@@ -42,12 +45,13 @@
 		138C051F2BDB1BC8A5E959DA /* Pods-HelpMeOut.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelpMeOut.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HelpMeOut/Pods-HelpMeOut.debug.xcconfig"; sourceTree = "<group>"; };
 		5F37087A1F2418A9006AAD5B /* LoginSelector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginSelector.swift; sourceTree = "<group>"; };
 		5F37087E1F241CE9006AAD5B /* ViewControllerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerExtensions.swift; sourceTree = "<group>"; };
+		5F55B6481F25A4DD0075C46C /* AppNavigationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppNavigationHelper.swift; sourceTree = "<group>"; };
+		5F55B64C1F25B15E0075C46C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		5F55B64E1F25B1690075C46C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		5F56450E1F239B8300C4D645 /* HelpMeOut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelpMeOut.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F5645111F239B8300C4D645 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = HelpMeOut/AppDelegate.swift; sourceTree = "<group>"; };
-		5F5645131F239B8300C4D645 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5F5645161F239B8300C4D645 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5F5645161F239B8300C4D645 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Navigation.storyboard; sourceTree = "<group>"; };
 		5F5645181F239B8300C4D645 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = HelpMeOut/Assets.xcassets; sourceTree = "<group>"; };
-		5F56451B1F239B8300C4D645 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F56451D1F239B8300C4D645 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = HelpMeOut/Info.plist; sourceTree = "<group>"; };
 		5F5645221F239B8300C4D645 /* HelpMeOutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelpMeOutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F5645261F239B8300C4D645 /* HelpMeOutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpMeOutTests.swift; sourceTree = "<group>"; };
@@ -57,7 +61,9 @@
 		5F577B301F24FDEC0030DD9C /* LoginService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
 		5F577B321F24FF020030DD9C /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		5F577B341F2500FD0030DD9C /* BearerToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BearerToken.swift; sourceTree = "<group>"; };
-		5F577B361F2510ED0030DD9C /* LoginServiceError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginServiceError.swift; sourceTree = "<group>"; };
+		5F577B3B1F2596350030DD9C /* MapPage.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MapPage.storyboard; sourceTree = "<group>"; };
+		5F577B3D1F25966C0030DD9C /* MapPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapPage.swift; sourceTree = "<group>"; };
+		5F577B3F1F259A180030DD9C /* NavigationMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationMenu.swift; sourceTree = "<group>"; };
 		5FDAF20A1F23A59A00E77475 /* LoginSelector.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginSelector.storyboard; sourceTree = "<group>"; };
 		5FDAF20C1F23BCD900E77475 /* SocialMediaLoginButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialMediaLoginButton.swift; sourceTree = "<group>"; };
 		5FDAF20E1F23BD3500E77475 /* SocialMediaLoginType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialMediaLoginType.swift; sourceTree = "<group>"; };
@@ -73,6 +79,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F55B64F1F25B1690075C46C /* MapKit.framework in Frameworks */,
+				5F55B64D1F25B15E0075C46C /* CoreLocation.framework in Frameworks */,
 				C5E7F07280C09E0AAEF941C1 /* Pods_HelpMeOut.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -128,9 +136,10 @@
 		5F5645051F239B8300C4D645 = {
 			isa = PBXGroup;
 			children = (
+				5F577B3A1F2596060030DD9C /* Map */,
 				5F37087C1F241B39006AAD5B /* shared */,
 				5FDAF2091F23A52900E77475 /* Login */,
-				5F5645101F239B8300C4D645 /* HelpMeOut */,
+				5F5645101F239B8300C4D645 /* MainNavigationController */,
 				5F5645251F239B8300C4D645 /* HelpMeOutTests */,
 				5F56450F1F239B8300C4D645 /* Products */,
 				827DFCB40EF1D2C749FB44AB /* Pods */,
@@ -147,13 +156,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5F5645101F239B8300C4D645 /* HelpMeOut */ = {
+		5F5645101F239B8300C4D645 /* MainNavigationController */ = {
 			isa = PBXGroup;
 			children = (
-				5F5645131F239B8300C4D645 /* ViewController.swift */,
-				5F5645151F239B8300C4D645 /* Main.storyboard */,
-				5F56451A1F239B8300C4D645 /* LaunchScreen.storyboard */,
+				5F5645151F239B8300C4D645 /* Navigation.storyboard */,
+				5F577B3F1F259A180030DD9C /* NavigationMenu.swift */,
+				5F55B6481F25A4DD0075C46C /* AppNavigationHelper.swift */,
 			);
+			name = MainNavigationController;
 			path = HelpMeOut;
 			sourceTree = "<group>";
 		};
@@ -190,9 +200,17 @@
 				5F577B301F24FDEC0030DD9C /* LoginService.swift */,
 				5F577B321F24FF020030DD9C /* LoginViewModel.swift */,
 				5F577B341F2500FD0030DD9C /* BearerToken.swift */,
-				5F577B361F2510ED0030DD9C /* LoginServiceError.swift */,
 			);
 			name = LoginService;
+			sourceTree = "<group>";
+		};
+		5F577B3A1F2596060030DD9C /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				5F577B3B1F2596350030DD9C /* MapPage.storyboard */,
+				5F577B3D1F25966C0030DD9C /* MapPage.swift */,
+			);
+			name = Map;
 			sourceTree = "<group>";
 		};
 		5FDAF2091F23A52900E77475 /* Login */ = {
@@ -219,6 +237,8 @@
 		97CC4DBD475062D8850F0C36 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5F55B64E1F25B1690075C46C /* MapKit.framework */,
+				5F55B64C1F25B15E0075C46C /* CoreLocation.framework */,
 				66B4937F0D4B8AF7BF0CD20F /* Pods_HelpMeOut.framework */,
 				DE2261C9E684CCAE3A1EBC14 /* Pods_HelpMeOutTests.framework */,
 			);
@@ -314,11 +334,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F56451C1F239B8300C4D645 /* LaunchScreen.storyboard in Resources */,
 				5FDAF20B1F23A59A00E77475 /* LoginSelector.storyboard in Resources */,
 				5F577B2B1F24267A0030DD9C /* LoginPage.storyboard in Resources */,
 				5F5645191F239B8300C4D645 /* Assets.xcassets in Resources */,
-				5F5645171F239B8300C4D645 /* Main.storyboard in Resources */,
+				5F577B3C1F2596350030DD9C /* MapPage.storyboard in Resources */,
+				5F5645171F239B8300C4D645 /* Navigation.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,16 +449,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F5645141F239B8300C4D645 /* ViewController.swift in Sources */,
 				5F37087B1F2418A9006AAD5B /* LoginSelector.swift in Sources */,
+				5F55B6491F25A4DD0075C46C /* AppNavigationHelper.swift in Sources */,
 				5F5645121F239B8300C4D645 /* AppDelegate.swift in Sources */,
 				5FDAF20D1F23BCD900E77475 /* SocialMediaLoginButton.swift in Sources */,
+				5F577B3E1F25966C0030DD9C /* MapPage.swift in Sources */,
 				5F577B351F2500FD0030DD9C /* BearerToken.swift in Sources */,
+				5F577B401F259A180030DD9C /* NavigationMenu.swift in Sources */,
 				5F577B2D1F24ED510030DD9C /* LoginPage.swift in Sources */,
 				5F37087F1F241CE9006AAD5B /* ViewControllerExtensions.swift in Sources */,
 				5FDAF20F1F23BD3500E77475 /* SocialMediaLoginType.swift in Sources */,
 				5F577B311F24FDEC0030DD9C /* LoginService.swift in Sources */,
-				5F577B371F2510ED0030DD9C /* LoginServiceError.swift in Sources */,
 				5F577B331F24FF020030DD9C /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -462,20 +483,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		5F5645151F239B8300C4D645 /* Main.storyboard */ = {
+		5F5645151F239B8300C4D645 /* Navigation.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				5F5645161F239B8300C4D645 /* Base */,
 			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		5F56451A1F239B8300C4D645 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5F56451B1F239B8300C4D645 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
+			name = Navigation.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

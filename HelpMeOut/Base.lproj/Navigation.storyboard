@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="8Pv-ja-gey">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Side Menu Navigation Controller-->
+        <scene sceneID="Ctw-Aw-jiU">
+            <objects>
+                <navigationController id="8Pv-ja-gey" customClass="UISideMenuNavigationController" customModule="SideMenu" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="HPR-Mt-sI4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.047058823530000002" green="0.66666666669999997" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="leftSide" value="NO"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <segue destination="kNd-SU-0Lm" kind="relationship" relationship="rootViewController" id="zKP-Hk-4Si"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bbf-ri-xj5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1217" y="162"/>
+        </scene>
+        <!--Navigation Menu-->
+        <scene sceneID="P41-ns-cih">
+            <objects>
+                <viewController id="kNd-SU-0Lm" customClass="NavigationMenu" customModule="HelpMeOut" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6bt-nb-WUC"/>
+                        <viewControllerLayoutGuide type="bottom" id="GUx-b3-NJ6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="t2Y-nC-OG5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BaseLogo" translatesAutoresizingMaskIntoConstraints="NO" id="djg-rJ-GUK">
+                                <rect key="frame" x="111" y="120" width="153" height="126.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="djg-rJ-GUK" secondAttribute="height" multiplier="23:19" id="m7x-6T-kcA"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jhI-l2-ZbI">
+                                <rect key="frame" x="84" y="357" width="275" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="jhI-l2-ZbI" secondAttribute="height" multiplier="223:43" id="yQE-KH-oRW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <state key="normal" title="Notifications">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ca-wP-sUi">
+                                <rect key="frame" x="136" y="439" width="223" height="53"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <state key="normal" title="My Profile">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yeu-3F-vH2">
+                                <rect key="frame" x="84" y="531" width="275" height="53"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <state key="normal" title="My Log">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.047058823530000002" green="0.66666666669999997" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="djg-rJ-GUK" firstAttribute="top" secondItem="6bt-nb-WUC" secondAttribute="bottom" constant="56" id="1d0-kH-rqZ"/>
+                            <constraint firstItem="djg-rJ-GUK" firstAttribute="leading" secondItem="t2Y-nC-OG5" secondAttribute="leadingMargin" constant="95" id="888-C2-h6r"/>
+                            <constraint firstItem="3ca-wP-sUi" firstAttribute="width" secondItem="jhI-l2-ZbI" secondAttribute="height" multiplier="223:53" id="8iW-pe-jQG"/>
+                            <constraint firstItem="3ca-wP-sUi" firstAttribute="top" secondItem="jhI-l2-ZbI" secondAttribute="bottom" constant="29" id="GrQ-Q7-xK7"/>
+                            <constraint firstItem="3ca-wP-sUi" firstAttribute="trailing" secondItem="jhI-l2-ZbI" secondAttribute="trailing" id="IMy-Fi-cgZ"/>
+                            <constraint firstItem="jhI-l2-ZbI" firstAttribute="top" secondItem="6bt-nb-WUC" secondAttribute="bottom" constant="293" id="JHt-59-QKW"/>
+                            <constraint firstItem="djg-rJ-GUK" firstAttribute="centerX" secondItem="t2Y-nC-OG5" secondAttribute="centerX" id="TJe-R3-LlG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jhI-l2-ZbI" secondAttribute="trailing" id="WD6-ak-LAP"/>
+                            <constraint firstItem="Yeu-3F-vH2" firstAttribute="trailing" secondItem="3ca-wP-sUi" secondAttribute="trailing" id="i5K-9T-ZCt"/>
+                            <constraint firstItem="Yeu-3F-vH2" firstAttribute="top" secondItem="3ca-wP-sUi" secondAttribute="bottom" constant="39" id="pcl-LS-vZj"/>
+                            <constraint firstItem="Yeu-3F-vH2" firstAttribute="width" secondItem="3ca-wP-sUi" secondAttribute="height" multiplier="223:43" id="qFD-3n-kgt"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="B60-iD-kyE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9za-rP-nZQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-44" y="161"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BaseLogo" width="4972" height="4459"/>
+    </resources>
+</document>
