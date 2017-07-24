@@ -21,7 +21,6 @@
 		5F577B331F24FF020030DD9C /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F577B321F24FF020030DD9C /* LoginViewModel.swift */; };
 		5F577B351F2500FD0030DD9C /* BearerToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F577B341F2500FD0030DD9C /* BearerToken.swift */; };
 		5F577B371F2510ED0030DD9C /* LoginServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F577B361F2510ED0030DD9C /* LoginServiceError.swift */; };
-		5F577B391F256BF20030DD9C /* LoadingOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F577B381F256BF20030DD9C /* LoadingOverlay.swift */; };
 		5FDAF20B1F23A59A00E77475 /* LoginSelector.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FDAF20A1F23A59A00E77475 /* LoginSelector.storyboard */; };
 		5FDAF20D1F23BCD900E77475 /* SocialMediaLoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDAF20C1F23BCD900E77475 /* SocialMediaLoginButton.swift */; };
 		5FDAF20F1F23BD3500E77475 /* SocialMediaLoginType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDAF20E1F23BD3500E77475 /* SocialMediaLoginType.swift */; };
@@ -59,7 +58,6 @@
 		5F577B321F24FF020030DD9C /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		5F577B341F2500FD0030DD9C /* BearerToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BearerToken.swift; sourceTree = "<group>"; };
 		5F577B361F2510ED0030DD9C /* LoginServiceError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginServiceError.swift; sourceTree = "<group>"; };
-		5F577B381F256BF20030DD9C /* LoadingOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingOverlay.swift; sourceTree = "<group>"; };
 		5FDAF20A1F23A59A00E77475 /* LoginSelector.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginSelector.storyboard; sourceTree = "<group>"; };
 		5FDAF20C1F23BCD900E77475 /* SocialMediaLoginButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialMediaLoginButton.swift; sourceTree = "<group>"; };
 		5FDAF20E1F23BD3500E77475 /* SocialMediaLoginType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialMediaLoginType.swift; sourceTree = "<group>"; };
@@ -106,7 +104,6 @@
 			isa = PBXGroup;
 			children = (
 				5F37087E1F241CE9006AAD5B /* ViewControllerExtensions.swift */,
-				5F577B381F256BF20030DD9C /* LoadingOverlay.swift */,
 			);
 			name = uiUtilities;
 			sourceTree = "<group>";
@@ -443,7 +440,6 @@
 				5F577B311F24FDEC0030DD9C /* LoginService.swift in Sources */,
 				5F577B371F2510ED0030DD9C /* LoginServiceError.swift in Sources */,
 				5F577B331F24FF020030DD9C /* LoginViewModel.swift in Sources */,
-				5F577B391F256BF20030DD9C /* LoadingOverlay.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

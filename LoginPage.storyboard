@@ -47,7 +47,14 @@
                                     <constraint firstAttribute="width" secondItem="cGF-CA-dAn" secondAttribute="height" multiplier="28:5" id="XPT-At-fKI"/>
                                 </constraints>
                                 <state key="normal" title="Login" backgroundImage="buttonWhite"/>
+                                <connections>
+                                    <action selector="loginButtonClicked:" destination="FQ6-zv-Eng" eventType="touchUpInside" id="KTm-oD-WHt"/>
+                                </connections>
                             </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="5Eu-Vz-vmo">
+                                <rect key="frame" x="169" y="315" width="37" height="37"/>
+                                <color key="color" red="0.95294117649999999" green="0.32549019610000002" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="0.047058823529411764" green="0.66666666666666663" blue="0.86274509803921573" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -63,12 +70,16 @@
                             <constraint firstItem="HJe-xQ-UJG" firstAttribute="centerX" secondItem="cb8-3W-Hln" secondAttribute="centerX" id="eXp-XD-hyk"/>
                             <constraint firstItem="Jkl-xt-fm6" firstAttribute="height" secondItem="yhg-Od-zaZ" secondAttribute="height" id="lem-dy-rf4"/>
                             <constraint firstAttribute="trailingMargin" secondItem="cGF-CA-dAn" secondAttribute="trailing" constant="74" id="qR0-Yx-Xgm"/>
+                            <constraint firstItem="5Eu-Vz-vmo" firstAttribute="centerY" secondItem="cb8-3W-Hln" secondAttribute="centerY" id="qUg-I5-3sZ"/>
                             <constraint firstItem="Jkl-xt-fm6" firstAttribute="top" secondItem="yhg-Od-zaZ" secondAttribute="bottom" constant="35" id="rFA-s5-c4c"/>
                             <constraint firstItem="Jkl-xt-fm6" firstAttribute="width" secondItem="yhg-Od-zaZ" secondAttribute="width" id="v0d-Vc-WL8"/>
                             <constraint firstItem="HJe-xQ-UJG" firstAttribute="top" secondItem="O5v-GE-xdH" secondAttribute="bottom" constant="64" id="xWF-Qf-ndc"/>
+                            <constraint firstItem="5Eu-Vz-vmo" firstAttribute="centerX" secondItem="cb8-3W-Hln" secondAttribute="centerX" id="xar-FY-DxA"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="activityIndicatorView" destination="5Eu-Vz-vmo" id="Kgl-zs-ZdZ"/>
+                        <outlet property="loginButton" destination="cGF-CA-dAn" id="Tvj-Vv-6e5"/>
                         <outlet property="passwordText" destination="Jkl-xt-fm6" id="DmL-hk-BG7"/>
                         <outlet property="socialMediaImage" destination="HJe-xQ-UJG" id="E3o-uT-hy3"/>
                         <outlet property="userNameText" destination="yhg-Od-zaZ" id="lTG-Q9-USa"/>

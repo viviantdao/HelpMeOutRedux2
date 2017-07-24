@@ -14,12 +14,49 @@ class LoginPage: UIViewController{
     @IBOutlet weak var socialMediaImage: UIImageView!
     @IBOutlet weak var userNameText: UITextField!
     @IBOutlet weak var passwordText: UITextField!
+    @IBOutlet weak var loginButton: UIButton!
+    
+    @IBOutlet weak var activityIndicatorView: UIActivityIndicatorView!
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        self.activityIndicatorView.hidesWhenStopped = true
+        self.activityIndicatorView.stopAnimating()
         SetSocialMediaInformation()
     }
     
+    @IBAction func loginButtonClicked(_ sender: UIButton) {
+        
+        if canLogin() {
+            
+            enableControls(enable: false)
+            self.activityIndicatorView.isHidden = false
+            self.activityIndicatorView.startAnimating()
+            
+            LoginService.Instance.Login(loginInfo: LoginViewModel(username: (self.userNameText?.text!)!, password: (self.passwordText?.text!)!)
+                , callback: { (token) in
+                    self.activityIndicatorView.stopAnimating()
+                    self.navigationController?.popToRootViewController(animated: true)
+            })
+            
+        }
+    }
+    
+    private func canLogin()->Bool {
+        
+        
+        return (userNameText?.text?.characters.count)! > 0
+                && (passwordText?.text?.characters.count)! > 0
+        
+    }
+    
+    private func enableControls(enable: Bool = true)->Void{
+        
+        self.userNameText?.isEnabled = enable
+        self.passwordText?.isEnabled = enable
+        self.loginButton?.isEnabled = enable
+        
+    }
     private func SetSocialMediaInformation(){
        
         if let loginType = LoginService.Instance.LoginType{
