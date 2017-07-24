@@ -13,7 +13,7 @@ class UserProfile {
     
     private let _image:UIImage!
     private let _name: String
-    private let _reviews: [ProfileReviews]
+    private let _reviews: [ProfileReview]?
     
     
     public var Image:UIImage {
@@ -28,19 +28,19 @@ class UserProfile {
         }
     }
     
-    public var Reviews: [ProfileReviews]{
+    public var Reviews: [ProfileReview]?{
         get {
             return self._reviews
         }
     }
     
-    private init(image:UIImage, name:String, reviews:[ProfileReviews]){
+    private init(image:UIImage, name:String, reviews:[ProfileReview]?){
         self._image = image
         self._name = name
         self._reviews = reviews
     }
     
-    public static func CreateProfile(image:UIImage, name:String, reviews:[ProfileReviews])->UserProfile{
+    public static func CreateProfile(image:UIImage, name:String, reviews:[ProfileReview]? = nil)->UserProfile{
         return UserProfile(image: image, name:name, reviews: reviews)
     }
 }

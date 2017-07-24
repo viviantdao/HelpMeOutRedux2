@@ -41,6 +41,7 @@ class MapPage: UIViewController,CLLocationManagerDelegate {
         annotation.title = "Microsoft Building 32"
         annotation.subtitle = "People work here"
         
+        
         annotation2.coordinate = CLLocationCoordinate2D(latitude: 47.644311, longitude: -122.122035)
         mapView.addAnnotation(annotation2)
         annotation2.title = "Microsoft Cafe 30"

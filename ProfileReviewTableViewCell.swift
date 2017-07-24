@@ -17,5 +17,11 @@ class ProfileReviewTableViewCell: UITableViewCell {
     @IBOutlet weak var time: UILabel!
     @IBOutlet weak var starRating: CosmosView!
     
-    
+    public func SetFromReviewModel(review: ProfileReview)->Void{
+        self.profileImage?.image = review.profile.Image
+        self.profileName?.text = review.profile.Name
+        self.comment?.text = review.comment
+        self.time?.text = "\(review.time / 60) hours \(review.time % 60) minutes"
+        self.starRating.rating = Double(review.rating)
+    }
 }

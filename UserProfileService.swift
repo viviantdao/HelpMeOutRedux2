@@ -1,5 +1,5 @@
 //
-//  ProfileReviews.swift
+//  UserProfileService.swift
 //  HelpMeOut
 //
 //  Created by Young Tech on 7/24/17.
@@ -7,8 +7,7 @@
 //
 
 import Foundation
-import UIKit
 
-class ProfileReviews {
+class UserProfileService{
     
 }

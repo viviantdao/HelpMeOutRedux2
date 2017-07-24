@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		5F37087B1F2418A9006AAD5B /* LoginSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F37087A1F2418A9006AAD5B /* LoginSelector.swift */; };
 		5F37087F1F241CE9006AAD5B /* ViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F37087E1F241CE9006AAD5B /* ViewControllerExtensions.swift */; };
+		5F467FA41F2673D600D57F8F /* UserProfileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F467FA31F2673D600D57F8F /* UserProfileService.swift */; };
+		5F467FA61F2674B100D57F8F /* BaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F467FA51F2674B100D57F8F /* BaseRepository.swift */; };
 		5F55B6491F25A4DD0075C46C /* AppNavigationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F55B6481F25A4DD0075C46C /* AppNavigationHelper.swift */; };
 		5F55B64D1F25B15E0075C46C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F55B64C1F25B15E0075C46C /* CoreLocation.framework */; };
 		5F55B64F1F25B1690075C46C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F55B64E1F25B1690075C46C /* MapKit.framework */; };
@@ -20,7 +22,7 @@
 		5F55B6641F26455A0075C46C /* ProfileReviewPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F55B6631F26455A0075C46C /* ProfileReviewPage.swift */; };
 		5F55B6661F2650F90075C46C /* Artwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F55B6651F2650F90075C46C /* Artwork.swift */; };
 		5F55B6691F2657CE0075C46C /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F55B6681F2657CE0075C46C /* UserProfile.swift */; };
-		5F55B66C1F2658B80075C46C /* ProfileReviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F55B66B1F2658B80075C46C /* ProfileReviews.swift */; };
+		5F55B66C1F2658B80075C46C /* ProfileReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F55B66B1F2658B80075C46C /* ProfileReview.swift */; };
 		5F55B66E1F265D750075C46C /* ProfileReviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F55B66D1F265D750075C46C /* ProfileReviewTableViewCell.swift */; };
 		5F5645121F239B8300C4D645 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5645111F239B8300C4D645 /* AppDelegate.swift */; };
 		5F5645171F239B8300C4D645 /* Navigation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F5645151F239B8300C4D645 /* Navigation.storyboard */; };
@@ -55,6 +57,8 @@
 		138C051F2BDB1BC8A5E959DA /* Pods-HelpMeOut.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelpMeOut.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HelpMeOut/Pods-HelpMeOut.debug.xcconfig"; sourceTree = "<group>"; };
 		5F37087A1F2418A9006AAD5B /* LoginSelector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginSelector.swift; sourceTree = "<group>"; };
 		5F37087E1F241CE9006AAD5B /* ViewControllerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerExtensions.swift; sourceTree = "<group>"; };
+		5F467FA31F2673D600D57F8F /* UserProfileService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileService.swift; sourceTree = "<group>"; };
+		5F467FA51F2674B100D57F8F /* BaseRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseRepository.swift; sourceTree = "<group>"; };
 		5F55B6481F25A4DD0075C46C /* AppNavigationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppNavigationHelper.swift; sourceTree = "<group>"; };
 		5F55B64C1F25B15E0075C46C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		5F55B64E1F25B1690075C46C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -66,7 +70,7 @@
 		5F55B6631F26455A0075C46C /* ProfileReviewPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileReviewPage.swift; sourceTree = "<group>"; };
 		5F55B6651F2650F90075C46C /* Artwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Artwork.swift; sourceTree = "<group>"; };
 		5F55B6681F2657CE0075C46C /* UserProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
-		5F55B66B1F2658B80075C46C /* ProfileReviews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileReviews.swift; sourceTree = "<group>"; };
+		5F55B66B1F2658B80075C46C /* ProfileReview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileReview.swift; sourceTree = "<group>"; };
 		5F55B66D1F265D750075C46C /* ProfileReviewTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileReviewTableViewCell.swift; sourceTree = "<group>"; };
 		5F56450E1F239B8300C4D645 /* HelpMeOut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelpMeOut.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F5645111F239B8300C4D645 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = HelpMeOut/AppDelegate.swift; sourceTree = "<group>"; };
@@ -155,6 +159,22 @@
 			name = Components;
 			sourceTree = "<group>";
 		};
+		5F467FA21F2673C100D57F8F /* UserProfileService */ = {
+			isa = PBXGroup;
+			children = (
+				5F467FA31F2673D600D57F8F /* UserProfileService.swift */,
+			);
+			name = UserProfileService;
+			sourceTree = "<group>";
+		};
+		5F467FA71F2678D700D57F8F /* core */ = {
+			isa = PBXGroup;
+			children = (
+				5F467FA51F2674B100D57F8F /* BaseRepository.swift */,
+			);
+			name = core;
+			sourceTree = "<group>";
+		};
 		5F55B6501F2639B10075C46C /* components */ = {
 			isa = PBXGroup;
 			children = (
@@ -212,7 +232,7 @@
 			isa = PBXGroup;
 			children = (
 				5F55B6681F2657CE0075C46C /* UserProfile.swift */,
-				5F55B66B1F2658B80075C46C /* ProfileReviews.swift */,
+				5F55B66B1F2658B80075C46C /* ProfileReview.swift */,
 			);
 			name = Profile;
 			sourceTree = "<group>";
@@ -273,6 +293,8 @@
 		5F577B2E1F24F54A0030DD9C /* services */ = {
 			isa = PBXGroup;
 			children = (
+				5F467FA71F2678D700D57F8F /* core */,
+				5F467FA21F2673C100D57F8F /* UserProfileService */,
 				5F577B2F1F24FDD50030DD9C /* LoginService */,
 			);
 			name = services;
@@ -543,11 +565,13 @@
 				5F5645121F239B8300C4D645 /* AppDelegate.swift in Sources */,
 				5FDAF20D1F23BCD900E77475 /* SocialMediaLoginButton.swift in Sources */,
 				5F577B3E1F25966C0030DD9C /* MapPage.swift in Sources */,
+				5F467FA61F2674B100D57F8F /* BaseRepository.swift in Sources */,
 				5F577B351F2500FD0030DD9C /* BearerToken.swift in Sources */,
 				5F577B401F259A180030DD9C /* NavigationMenu.swift in Sources */,
 				5F55B6691F2657CE0075C46C /* UserProfile.swift in Sources */,
 				5F55B6641F26455A0075C46C /* ProfileReviewPage.swift in Sources */,
 				5F55B6661F2650F90075C46C /* Artwork.swift in Sources */,
+				5F467FA41F2673D600D57F8F /* UserProfileService.swift in Sources */,
 				5F577B2D1F24ED510030DD9C /* LoginPage.swift in Sources */,
 				5F55B6541F2639FD0075C46C /* MapViewExtensions.swift in Sources */,
 				5F55B65E1F26400A0075C46C /* ProfilePage.swift in Sources */,
@@ -556,7 +580,7 @@
 				5F577B311F24FDEC0030DD9C /* LoginService.swift in Sources */,
 				5F55B65C1F263E940075C46C /* UIImageViewExtensions.swift in Sources */,
 				5F577B331F24FF020030DD9C /* LoginViewModel.swift in Sources */,
-				5F55B66C1F2658B80075C46C /* ProfileReviews.swift in Sources */,
+				5F55B66C1F2658B80075C46C /* ProfileReview.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
