@@ -8,6 +8,17 @@
 
 import Foundation
 
-class UserProfileService{
+class UserProfileService: BaseRepository<UserProfile>{
+    
+    public static let Instance = UserProfileService()
+    
+    private init(){
+        super.init([StaticData.BillGProfile, StaticData.SteveBallmerProfile, StaticData.SteveJobsProfile])
+    }
+    
+    public func GetLoggedInUser()->UserProfile {
+        return StaticData.BillGProfile
+    }
+    
     
 }

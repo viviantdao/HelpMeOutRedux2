@@ -14,9 +14,15 @@ class ProfilePage: UIViewController {
     
     @IBOutlet weak var profileImage: UIImageView!
     @IBOutlet weak var starRating: CosmosView!
-
+    @IBOutlet weak var userNameLabel: UILabel!
+    
+    let user = UserProfileService.Instance.GetLoggedInUser()
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        self.userNameLabel.text = user.Name
+        self.profileImage.image = user.Image
+        self.starRating.rating = Double(user.Rating)
         self.profileImage.setRoundedCorners(borderWidth: 10)
     }
 }

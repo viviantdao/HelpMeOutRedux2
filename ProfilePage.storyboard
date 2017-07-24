@@ -95,6 +95,7 @@
                     <connections>
                         <outlet property="profileImage" destination="VWA-6d-NZn" id="1go-Pe-JoR"/>
                         <outlet property="starRating" destination="yxX-eg-di1" id="kYI-T1-ZTV"/>
+                        <outlet property="userNameLabel" destination="plH-Jr-2t6" id="W0E-gS-mcq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bRj-gk-VQm" userLabel="First Responder" sceneMemberID="firstResponder"/>
