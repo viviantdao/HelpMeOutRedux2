@@ -36,11 +36,11 @@ class UserProfile {
     
     private init(image:UIImage, name:String, reviews:[ProfileReviews]){
         self._image = image
-        self.name = name
-        self.reviews = reviews
+        self._name = name
+        self._reviews = reviews
     }
     
-    public static func CreateProfile(image:UIImage, name:Sring, reviews:[ProfileReviews])->UserProfile{
+    public static func CreateProfile(image:UIImage, name:String, reviews:[ProfileReviews])->UserProfile{
         return UserProfile(image: image, name:name, reviews: reviews)
     }
 }
