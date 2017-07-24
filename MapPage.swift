@@ -20,10 +20,14 @@ class MapPage: UIViewController, CLLocationManagerDelegate {
     var lastLocation : CLLocationCoordinate2D!
     
     override func viewWillAppear(_ animated: Bool) {
+        
         super.viewWillAppear(animated)
+        
         mapView.delegate = self as? MKMapViewDelegate
         self.locationManager = CLLocationManager()
         checkLocationAuthorizationStatus()
+        centerMapOnUserLocation()
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -55,6 +59,16 @@ class MapPage: UIViewController, CLLocationManagerDelegate {
     }
     
     
+    func centerMapOnUserLocation() {
+        
+        let regionRadiusInMeters: CLLocationDistance = 500
+       // let location = mapView.userLocation
+        
+        let coordinateRegion = MKCoordinateRegionMakeWithDistance(CLLocation(latitude: 47.643653, longitude: -122.122407).coordinate, regionRadiusInMeters * 2.0, regionRadiusInMeters * 2.0)
+        
+        mapView.setRegion(coordinateRegion, animated: true)
+        
+    }
     
     func checkLocationAuthorizationStatus() {
         

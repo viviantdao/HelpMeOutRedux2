@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="bjj-Lc-qRh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="2Ct-8P-byg">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -59,7 +59,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="n4z-Uu-xdQ" kind="presentation" id="8Zo-y5-BrP"/>
+                                    <segue destination="n4z-Uu-xdQ" kind="presentation" modalPresentationStyle="overFullScreen" modalTransitionStyle="coverVertical" id="8Zo-y5-BrP"/>
                                 </connections>
                             </button>
                         </barButtonItem>
@@ -79,25 +79,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oga-ez-w9y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1735" y="-151"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="I6M-WZ-s72">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bjj-Lc-qRh" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="1ra-Kl-Jtt">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.047058823530000002" green="0.66666666669999997" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="2Ct-8P-byg" kind="relationship" relationship="rootViewController" id="cFd-MR-cxr"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="BFQ-WG-Ikd" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="117.59999999999999" y="136.28185907046478"/>
         </scene>
     </scenes>
     <resources>
