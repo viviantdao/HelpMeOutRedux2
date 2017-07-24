@@ -8,6 +8,7 @@ target 'HelpMeOut' do
   # Pods for HelpMeOut
   pod ‘Alamofire’
   pod 'SideMenu', '~> 2.3'
+  pod 'Cosmos', '~> 11.0'
  
   target 'HelpMeOutTests' do
     inherit! :search_paths

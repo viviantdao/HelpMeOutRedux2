@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="g0X-ea-Xy6">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Profile Page-->
+        <scene sceneID="zP1-QI-7Ng">
+            <objects>
+                <viewController id="g0X-ea-Xy6" customClass="ProfilePage" customModule="HelpMeOut" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eeS-Wo-zZT"/>
+                        <viewControllerLayoutGuide type="bottom" id="0mA-eX-4Tf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WFQ-bv-St0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VWA-6d-NZn">
+                                <rect key="frame" x="60" y="65" width="255" height="199"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="VWA-6d-NZn" secondAttribute="height" multiplier="255:199" id="7fx-Sk-fu4"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IjG-zL-vBT">
+                                <rect key="frame" x="16" y="312" width="343" height="335"/>
+                                <subviews>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Akw-dD-2yb">
+                                        <rect key="frame" x="8" y="92" width="327" height="235"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Akw-dD-2yb" secondAttribute="height" multiplier="327:235" id="As7-Qq-FmK"/>
+                                        </constraints>
+                                        <connections>
+                                            <segue destination="bk8-pf-1mO" kind="embed" id="YN3-8G-LlL"/>
+                                        </connections>
+                                    </containerView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yxX-eg-di1" userLabel="StarRating" customClass="CosmosView" customModule="Cosmos">
+                                        <rect key="frame" x="74" y="48" width="193" height="19"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="yxX-eg-di1" secondAttribute="height" multiplier="51:5" id="sYA-Lo-LoP"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                                <real key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="updateOnTouch" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="filledImage" value="GoldStar"/>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="emptyImage" value="GoldStarEmpty"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="textMargin">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="yxX-eg-di1" firstAttribute="leading" secondItem="IjG-zL-vBT" secondAttribute="leading" constant="73.870000000000005" id="0Ph-0d-2mI"/>
+                                    <constraint firstItem="Akw-dD-2yb" firstAttribute="top" secondItem="yxX-eg-di1" secondAttribute="bottom" constant="25" id="1zw-b7-7kJ"/>
+                                    <constraint firstAttribute="width" secondItem="IjG-zL-vBT" secondAttribute="height" multiplier="343:335" id="6A8-22-Jsk"/>
+                                    <constraint firstItem="yxX-eg-di1" firstAttribute="top" secondItem="IjG-zL-vBT" secondAttribute="top" constant="48" id="8dJ-ac-rwY"/>
+                                    <constraint firstItem="Akw-dD-2yb" firstAttribute="leading" secondItem="IjG-zL-vBT" secondAttribute="leading" constant="8" id="9v9-dM-cQU"/>
+                                    <constraint firstAttribute="bottom" secondItem="Akw-dD-2yb" secondAttribute="bottom" constant="8" id="Ed4-AM-EMt"/>
+                                    <constraint firstAttribute="trailing" secondItem="yxX-eg-di1" secondAttribute="trailing" constant="76.129999999999995" id="y0J-QL-0AC"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="William F Door" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="plH-Jr-2t6">
+                                <rect key="frame" x="91.5" y="320" width="192" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.047058823529411764" green="0.66666666666666663" blue="0.86274509803921573" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="leadingMargin" secondItem="IjG-zL-vBT" secondAttribute="leading" id="1Sa-hP-zsZ"/>
+                            <constraint firstItem="plH-Jr-2t6" firstAttribute="centerX" secondItem="IjG-zL-vBT" secondAttribute="centerX" id="8d3-AK-4s0"/>
+                            <constraint firstItem="VWA-6d-NZn" firstAttribute="top" secondItem="eeS-Wo-zZT" secondAttribute="bottom" constant="45" id="A7m-ht-58G"/>
+                            <constraint firstItem="IjG-zL-vBT" firstAttribute="top" secondItem="VWA-6d-NZn" secondAttribute="bottom" constant="48" id="DWw-j7-JDn"/>
+                            <constraint firstItem="IjG-zL-vBT" firstAttribute="top" secondItem="plH-Jr-2t6" secondAttribute="bottom" constant="-44" id="JN2-BZ-Tq9"/>
+                            <constraint firstItem="VWA-6d-NZn" firstAttribute="leading" secondItem="WFQ-bv-St0" secondAttribute="leadingMargin" constant="44" id="OGM-7J-fUm"/>
+                            <constraint firstItem="VWA-6d-NZn" firstAttribute="centerX" secondItem="WFQ-bv-St0" secondAttribute="centerX" id="PCs-k6-amt"/>
+                            <constraint firstItem="IjG-zL-vBT" firstAttribute="centerX" secondItem="WFQ-bv-St0" secondAttribute="centerX" id="gVM-v3-1zo"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="profileImage" destination="VWA-6d-NZn" id="1go-Pe-JoR"/>
+                        <outlet property="starRating" destination="yxX-eg-di1" id="kYI-T1-ZTV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bRj-gk-VQm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="317.60000000000002" y="319.79010494752629"/>
+        </scene>
+        <!--ProfileReviewPage-->
+        <scene sceneID="Q7X-FD-l1h">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ProfileReviewPage" id="bk8-pf-1mO" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wLL-0e-fxc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1020" y="67"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="GoldStar" width="53" height="51"/>
+        <image name="GoldStarEmpty" width="53" height="51"/>
+    </resources>
+</document>
