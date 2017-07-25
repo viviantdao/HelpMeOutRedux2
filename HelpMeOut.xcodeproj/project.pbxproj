@@ -37,6 +37,7 @@
 		5F577B3C1F2596350030DD9C /* MapPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F577B3B1F2596350030DD9C /* MapPage.storyboard */; };
 		5F577B3E1F25966C0030DD9C /* MapPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F577B3D1F25966C0030DD9C /* MapPage.swift */; };
 		5F577B401F259A180030DD9C /* NavigationMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F577B3F1F259A180030DD9C /* NavigationMenu.swift */; };
+		5FC9DF811F26C1310090D3E5 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC9DF801F26C1310090D3E5 /* UIColorExtensions.swift */; };
 		5FDAF20B1F23A59A00E77475 /* LoginSelector.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FDAF20A1F23A59A00E77475 /* LoginSelector.storyboard */; };
 		5FDAF20D1F23BCD900E77475 /* SocialMediaLoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDAF20C1F23BCD900E77475 /* SocialMediaLoginButton.swift */; };
 		5FDAF20F1F23BD3500E77475 /* SocialMediaLoginType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDAF20E1F23BD3500E77475 /* SocialMediaLoginType.swift */; };
@@ -90,6 +91,7 @@
 		5F577B3B1F2596350030DD9C /* MapPage.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MapPage.storyboard; sourceTree = "<group>"; };
 		5F577B3D1F25966C0030DD9C /* MapPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapPage.swift; sourceTree = "<group>"; };
 		5F577B3F1F259A180030DD9C /* NavigationMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationMenu.swift; sourceTree = "<group>"; };
+		5FC9DF801F26C1310090D3E5 /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		5FDAF20A1F23A59A00E77475 /* LoginSelector.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginSelector.storyboard; sourceTree = "<group>"; };
 		5FDAF20C1F23BCD900E77475 /* SocialMediaLoginButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialMediaLoginButton.swift; sourceTree = "<group>"; };
 		5FDAF20E1F23BD3500E77475 /* SocialMediaLoginType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialMediaLoginType.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 			children = (
 				5F37087E1F241CE9006AAD5B /* ViewControllerExtensions.swift */,
 				5F55B65B1F263E940075C46C /* UIImageViewExtensions.swift */,
+				5FC9DF801F26C1310090D3E5 /* UIColorExtensions.swift */,
 			);
 			name = uiUtilities;
 			sourceTree = "<group>";
@@ -577,6 +580,7 @@
 				5F467FA91F26879100D57F8F /* StaticData.swift in Sources */,
 				5F467FA41F2673D600D57F8F /* UserProfileService.swift in Sources */,
 				5F577B2D1F24ED510030DD9C /* LoginPage.swift in Sources */,
+				5FC9DF811F26C1310090D3E5 /* UIColorExtensions.swift in Sources */,
 				5F55B6541F2639FD0075C46C /* MapViewExtensions.swift in Sources */,
 				5F55B65E1F26400A0075C46C /* ProfilePage.swift in Sources */,
 				5F37087F1F241CE9006AAD5B /* ViewControllerExtensions.swift in Sources */,

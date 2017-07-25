@@ -31,6 +31,7 @@ class ProfileReviewPage: UITableViewController {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "profileReviewCell", for: indexPath) as! ProfileReviewTableViewCell
         cell.SetFromReviewModel(review: reviews[indexPath.row])
+        cell.profileImage.setRoundedCorners(borderWidth: 2, borderColor: UIColor(hex: "#0CAADC"))
         return cell
     }
     

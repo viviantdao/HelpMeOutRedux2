@@ -23,6 +23,6 @@ class ProfilePage: UIViewController {
         self.userNameLabel.text = user.Name
         self.profileImage.image = user.Image
         self.starRating.rating = Double(user.Rating)
-        self.profileImage.setRoundedCorners(borderWidth: 10)
+        self.profileImage.setRoundedCorners(borderWidth: 5)
     }
 }
