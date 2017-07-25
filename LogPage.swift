@@ -15,8 +15,6 @@ class LogPage: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.title = "My Log"
-        tableView.layer.cornerRadius = 10
-        tableView.backgroundColor = .white
     }
 
 }

@@ -15,6 +15,7 @@ class LogPageTable: UITableViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        self.view.layer.cornerRadius = 10
 
     }
     
