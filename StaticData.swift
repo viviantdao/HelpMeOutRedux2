@@ -12,18 +12,21 @@ import UIKit
 class StaticData {
     
     public static let SteveBallmerProfile = UserProfile.CreateProfile(image: UIImage(named:"steveballmer.png")!,
-                                                                      name: "Steve (the other one)",
-                                                                      rating: 2)
+                                                                      name: "Steve  Clipper",
+                                                                      rating: 2,
+                                                                      time: 10)
     
     public static let SteveJobsProfile = UserProfile.CreateProfile(image: UIImage(named:"stevejobs.png")!,
                                                                    name: "Steve Career",
-                                                                   rating: 4)
+                                                                   rating: 4,
+                                                                   time: 200)
     
     
     
     public static let BillGProfile = UserProfile.CreateProfile(image: UIImage(named: "billg.png")!,
                                                                name: "William F Door",
                                                                rating: 5,
+                                                               time: 300,
                                                                reviews: [
                                                                     ProfileReview(profile: StaticData.SteveJobsProfile,
                                                                                   comment: "He helped save my company",

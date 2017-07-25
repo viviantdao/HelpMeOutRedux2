@@ -11,6 +11,12 @@ import UIKit
 class ProfileReviewPage: UITableViewController {
 
     let reviews = UserProfileService.Instance.GetLoggedInUser().Reviews!
+    let time = UserProfileService.Instance.GetLoggedInUser().Time
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.title = "\(time) minutes"
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

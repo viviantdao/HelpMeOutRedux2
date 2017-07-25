@@ -24,5 +24,6 @@ class ProfilePage: UIViewController {
         self.profileImage.image = user.Image
         self.starRating.rating = Double(user.Rating)
         self.profileImage.setRoundedCorners(borderWidth: 5)
+        self.title = "\(user.Time) minutes"
     }
 }

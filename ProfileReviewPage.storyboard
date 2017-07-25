@@ -39,14 +39,14 @@
                                             <color key="textColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="comment" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mek-oe-2pc">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="comment" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mek-oe-2pc">
                                             <rect key="frame" x="80" y="43" width="156" height="13.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                             <color key="textColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="time" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cRg-Q3-vl6">
-                                            <rect key="frame" x="325" y="43" width="42" height="13.5"/>
+                                            <rect key="frame" x="243" y="43" width="124" height="14"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                             <color key="textColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
@@ -68,9 +68,9 @@
                                         <constraint firstItem="0aG-6n-XyG" firstAttribute="top" secondItem="0ba-a0-0SB" secondAttribute="topMargin" constant="-1" id="HBg-GF-whw"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="lfb-eh-1q1" secondAttribute="trailing" constant="156" id="LyE-7T-uGb"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="Ae6-o2-T22" secondAttribute="trailing" id="NWL-dU-8e8"/>
+                                        <constraint firstItem="cRg-Q3-vl6" firstAttribute="width" secondItem="Ae6-o2-T22" secondAttribute="width" id="QRh-80-GWN"/>
                                         <constraint firstAttribute="leadingMargin" secondItem="0aG-6n-XyG" secondAttribute="leading" id="Tvs-IK-XtE"/>
                                         <constraint firstItem="mek-oe-2pc" firstAttribute="top" secondItem="lfb-eh-1q1" secondAttribute="bottom" constant="14" id="U8Y-oL-OjK"/>
-                                        <constraint firstItem="cRg-Q3-vl6" firstAttribute="leading" secondItem="mek-oe-2pc" secondAttribute="trailing" constant="89" id="a94-Ny-gpG"/>
                                         <constraint firstItem="Ae6-o2-T22" firstAttribute="top" secondItem="0ba-a0-0SB" secondAttribute="topMargin" constant="-1" id="aFV-nz-WmD"/>
                                         <constraint firstAttribute="topMargin" secondItem="lfb-eh-1q1" secondAttribute="top" id="b4h-xS-5bX"/>
                                         <constraint firstItem="mek-oe-2pc" firstAttribute="leading" secondItem="lfb-eh-1q1" secondAttribute="leading" id="g05-Pa-K6X"/>

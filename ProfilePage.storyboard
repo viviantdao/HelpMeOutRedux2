@@ -33,7 +33,7 @@
                                 <rect key="frame" x="16" y="312" width="343" height="335"/>
                                 <subviews>
                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Akw-dD-2yb">
-                                        <rect key="frame" x="8" y="92" width="327" height="235"/>
+                                        <rect key="frame" x="8" y="103" width="311.5" height="224"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="Akw-dD-2yb" secondAttribute="height" multiplier="327:235" id="As7-Qq-FmK"/>
                                         </constraints>
@@ -42,10 +42,7 @@
                                         </connections>
                                     </containerView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yxX-eg-di1" userLabel="StarRating" customClass="CosmosView" customModule="Cosmos">
-                                        <rect key="frame" x="74" y="48" width="193" height="19"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="yxX-eg-di1" secondAttribute="height" multiplier="51:5" id="sYA-Lo-LoP"/>
-                                        </constraints>
+                                        <rect key="frame" x="86.5" y="48" width="170" height="30"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="starSize">
                                                 <real key="value" value="30"/>
@@ -59,18 +56,19 @@
                                             <userDefinedRuntimeAttribute type="number" keyPath="textMargin">
                                                 <real key="value" value="0.0"/>
                                             </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="fillMode">
+                                                <integer key="value" value="0"/>
+                                            </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="yxX-eg-di1" firstAttribute="leading" secondItem="IjG-zL-vBT" secondAttribute="leading" constant="73.870000000000005" id="0Ph-0d-2mI"/>
                                     <constraint firstItem="Akw-dD-2yb" firstAttribute="top" secondItem="yxX-eg-di1" secondAttribute="bottom" constant="25" id="1zw-b7-7kJ"/>
                                     <constraint firstAttribute="width" secondItem="IjG-zL-vBT" secondAttribute="height" multiplier="343:335" id="6A8-22-Jsk"/>
                                     <constraint firstItem="yxX-eg-di1" firstAttribute="top" secondItem="IjG-zL-vBT" secondAttribute="top" constant="48" id="8dJ-ac-rwY"/>
                                     <constraint firstItem="Akw-dD-2yb" firstAttribute="leading" secondItem="IjG-zL-vBT" secondAttribute="leading" constant="8" id="9v9-dM-cQU"/>
                                     <constraint firstAttribute="bottom" secondItem="Akw-dD-2yb" secondAttribute="bottom" constant="8" id="Ed4-AM-EMt"/>
-                                    <constraint firstAttribute="trailing" secondItem="yxX-eg-di1" secondAttribute="trailing" constant="76.129999999999995" id="y0J-QL-0AC"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="William F Door" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="plH-Jr-2t6">
@@ -90,6 +88,7 @@
                             <constraint firstItem="VWA-6d-NZn" firstAttribute="leading" secondItem="WFQ-bv-St0" secondAttribute="leadingMargin" constant="44" id="OGM-7J-fUm"/>
                             <constraint firstItem="VWA-6d-NZn" firstAttribute="centerX" secondItem="WFQ-bv-St0" secondAttribute="centerX" id="PCs-k6-amt"/>
                             <constraint firstItem="IjG-zL-vBT" firstAttribute="centerX" secondItem="WFQ-bv-St0" secondAttribute="centerX" id="gVM-v3-1zo"/>
+                            <constraint firstItem="yxX-eg-di1" firstAttribute="centerX" secondItem="plH-Jr-2t6" secondAttribute="centerX" id="pHO-yi-mRV"/>
                         </constraints>
                     </view>
                     <connections>

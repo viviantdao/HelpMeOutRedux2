@@ -18,6 +18,10 @@ class MapPage: UIViewController,CLLocationManagerDelegate {
     let annotation4 = MKPointAnnotation() // In.gredients Restaurant
     
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.title = "\(UserProfileService.Instance.GetLoggedInUser().Time) minutes"
+    }
     
     func centerMapOnLocation(location: CLLocation) {
         let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate, regionRadiusInMeters * 2.0, regionRadiusInMeters * 2.0)
