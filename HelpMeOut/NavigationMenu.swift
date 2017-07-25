@@ -27,6 +27,13 @@ class NavigationMenu: UIViewController {
         self.navigationController?.pushViewController(UIViewController.GetInstance(for: ProfilePage.self)!, animated: true)
     }
 
+    
+    
+    @IBAction func logButtonClicked(_ sender: UIButton) {
+        
+        self.navigationController?.pushViewController(UIViewController.GetInstance(for: LogPage.self)!, animated: true)
+    }
+    
     @IBAction func dismissButtonClicked(_ sender: UIButton) {
         
         self.dismiss(animated: true)

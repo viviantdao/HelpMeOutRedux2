@@ -17,6 +17,9 @@ class MapPage: UIViewController,CLLocationManagerDelegate {
     let annotation3 = MKPointAnnotation() //Microsoft Conference Center
     let annotation4 = MKPointAnnotation() // In.gredients Restaurant
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        self.title = nil
+    }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)

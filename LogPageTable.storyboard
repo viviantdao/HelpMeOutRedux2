@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="rMW-Ps-Hgy">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Log Page Table-->
+        <scene sceneID="wDE-fl-fHg">
+            <objects>
+                <tableViewController id="rMW-Ps-Hgy" customClass="LogPageTable" customModule="HelpMeOut" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="92" sectionHeaderHeight="28" sectionFooterHeight="28" id="u49-Om-tKc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="entryCell" rowHeight="92" id="CwE-rs-mBZ" customClass="LogPageTableCell" customModule="HelpMeOut" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="92"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CwE-rs-mBZ" id="MLa-Rp-MaO">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="91.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Helped" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SYn-ke-kkI">
+                                            <rect key="frame" x="26" y="8" width="341" height="18"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8fr-Ib-RZN">
+                                            <rect key="frame" x="26" y="27" width="341" height="18"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Task" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uUO-L0-zF8">
+                                            <rect key="frame" x="26" y="46" width="341" height="18"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q3r-01-WpW">
+                                            <rect key="frame" x="26" y="64" width="46.5" height="18"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y3t-ez-bn8" customClass="CosmosView" customModule="Cosmos">
+                                            <rect key="frame" x="103" y="65" width="264" height="17"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
+                                                    <integer key="value" value="5"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="updateOnTouch" value="NO"/>
+                                                <userDefinedRuntimeAttribute type="image" keyPath="filledImage" value="GoldStar"/>
+                                                <userDefinedRuntimeAttribute type="image" keyPath="emptyImage" value="GoldStarEmpty"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="8fr-Ib-RZN" firstAttribute="leading" secondItem="SYn-ke-kkI" secondAttribute="leading" id="49t-uH-waQ"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="SYn-ke-kkI" secondAttribute="trailing" id="4PK-3y-pJl"/>
+                                        <constraint firstItem="Q3r-01-WpW" firstAttribute="top" secondItem="uUO-L0-zF8" secondAttribute="bottom" id="ABD-z8-0lO"/>
+                                        <constraint firstItem="SYn-ke-kkI" firstAttribute="leading" secondItem="MLa-Rp-MaO" secondAttribute="leadingMargin" constant="18" id="cWO-lZ-Z5v"/>
+                                        <constraint firstAttribute="topMargin" secondItem="SYn-ke-kkI" secondAttribute="top" id="cxs-ph-rBN"/>
+                                        <constraint firstItem="8fr-Ib-RZN" firstAttribute="top" secondItem="SYn-ke-kkI" secondAttribute="bottom" constant="1" id="iq2-SY-Dkz"/>
+                                        <constraint firstItem="uUO-L0-zF8" firstAttribute="top" secondItem="8fr-Ib-RZN" secondAttribute="bottom" constant="1" id="pfF-6b-u7b"/>
+                                        <constraint firstItem="Q3r-01-WpW" firstAttribute="leading" secondItem="uUO-L0-zF8" secondAttribute="leading" id="qn5-K1-3iy"/>
+                                        <constraint firstItem="uUO-L0-zF8" firstAttribute="leading" secondItem="8fr-Ib-RZN" secondAttribute="leading" id="rls-27-VmR"/>
+                                        <constraint firstItem="uUO-L0-zF8" firstAttribute="width" secondItem="8fr-Ib-RZN" secondAttribute="width" id="t1S-0y-Kgd"/>
+                                        <constraint firstItem="8fr-Ib-RZN" firstAttribute="width" secondItem="SYn-ke-kkI" secondAttribute="width" id="uEN-JV-qZU"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="helpedLabel" destination="SYn-ke-kkI" id="31d-XM-73a"/>
+                                    <outlet property="starRating" destination="y3t-ez-bn8" id="VWh-W9-ik9"/>
+                                    <outlet property="taskLabel" destination="uUO-L0-zF8" id="aM1-cf-qzf"/>
+                                    <outlet property="timeLabel" destination="8fr-Ib-RZN" id="ZCL-ki-n5A"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="rMW-Ps-Hgy" id="PhW-1F-3EZ"/>
+                            <outlet property="delegate" destination="rMW-Ps-Hgy" id="TDH-KD-r3h"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aWK-K9-Udv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="77.599999999999994" y="146.17691154422789"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="GoldStar" width="53" height="51"/>
+        <image name="GoldStarEmpty" width="53" height="51"/>
+    </resources>
+</document>

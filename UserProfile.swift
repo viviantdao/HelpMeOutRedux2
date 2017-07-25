@@ -13,9 +13,10 @@ class UserProfile {
     
     private var _image:UIImage!
     private var _name: String
-    private var _reviews: [ProfileReview]?
     private var _rating: Int
     private var _time: Int
+    private var _reviews: [ProfileReview]?
+    private var _logEntries: [LogEntry]?
     
     public var Image:UIImage {
         get {
@@ -32,6 +33,12 @@ class UserProfile {
     public var Reviews: [ProfileReview]?{
         get {
             return self._reviews
+        }
+    }
+    
+    public var LogEntries: [LogEntry]? {
+        get {
+            return self._logEntries
         }
     }
     
@@ -56,15 +63,30 @@ class UserProfile {
         }
     }
     
-    private init(image:UIImage, name:String, rating:Int, time: Int, reviews:[ProfileReview]?){
+    private init(image:UIImage,
+                 name:String,
+                 rating:Int,
+                 time: Int,
+                 reviews:[ProfileReview]?,
+                 log:[LogEntry]?){
+        
         self._image = image
         self._name = name
         self._rating = rating
         self._time = time
         self._reviews = reviews
+        self._logEntries = log
+        
     }
     
-    public static func CreateProfile(image:UIImage, name:String, rating:Int, time: Int, reviews:[ProfileReview]? = nil)->UserProfile{
-        return UserProfile(image: image, name:name, rating: rating, time: time, reviews: reviews)
+    public static func CreateProfile(image:UIImage,
+                                     name:String,
+                                     rating:Int,
+                                     time: Int,
+                                     reviews:[ProfileReview]? = nil,
+                                     log:[LogEntry]? = nil)->UserProfile{
+        
+        return UserProfile(image: image, name:name, rating: rating, time: time, reviews: reviews, log: log)
+        
     }
 }

@@ -37,6 +37,12 @@ class StaticData {
                                                                                   time: 90,
                                                                                   rating: 4)
                                                                 
+                                                                ],
+                                                               log: [
+                                                                    LogEntry(user: "Jimmy Conroy", time: 60, taskName: "Built his computer", rating: 5),
+                                                                    LogEntry(user: "Kathleen Bays", time: 180, taskName: "Helped move in", rating: 5),
+                                                                    LogEntry(user: "Steve McMan", time: 10, taskName: "Lent some sugar", rating: 5),
+                                                                    LogEntry(user: "YESC", time: 300, taskName: "Helped plant trees", rating: 5)
                                                                 ]
                                                                )
 }

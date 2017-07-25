@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		5F37087B1F2418A9006AAD5B /* LoginSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F37087A1F2418A9006AAD5B /* LoginSelector.swift */; };
 		5F37087F1F241CE9006AAD5B /* ViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F37087E1F241CE9006AAD5B /* ViewControllerExtensions.swift */; };
+		5F37B1FA1F27AF5E0088BD29 /* LogEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F37B1F91F27AF5E0088BD29 /* LogEntry.swift */; };
+		5F37B1FD1F27B28B0088BD29 /* LogPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F37B1FC1F27B28B0088BD29 /* LogPage.storyboard */; };
+		5F37B1FF1F27BC1E0088BD29 /* LogPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F37B1FE1F27BC1E0088BD29 /* LogPage.swift */; };
+		5F37B2021F27BDB00088BD29 /* LogPageTable.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F37B2011F27BDB00088BD29 /* LogPageTable.storyboard */; };
+		5F37B2041F27BE110088BD29 /* LogPageTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F37B2031F27BE110088BD29 /* LogPageTable.swift */; };
+		5F37B2071F27BFC40088BD29 /* LogPageTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F37B2061F27BFC40088BD29 /* LogPageTableCell.swift */; };
 		5F467FA41F2673D600D57F8F /* UserProfileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F467FA31F2673D600D57F8F /* UserProfileService.swift */; };
 		5F467FA61F2674B100D57F8F /* BaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F467FA51F2674B100D57F8F /* BaseRepository.swift */; };
 		5F467FA91F26879100D57F8F /* StaticData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F467FA81F26879100D57F8F /* StaticData.swift */; };
@@ -59,6 +65,12 @@
 		138C051F2BDB1BC8A5E959DA /* Pods-HelpMeOut.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelpMeOut.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HelpMeOut/Pods-HelpMeOut.debug.xcconfig"; sourceTree = "<group>"; };
 		5F37087A1F2418A9006AAD5B /* LoginSelector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginSelector.swift; sourceTree = "<group>"; };
 		5F37087E1F241CE9006AAD5B /* ViewControllerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerExtensions.swift; sourceTree = "<group>"; };
+		5F37B1F91F27AF5E0088BD29 /* LogEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogEntry.swift; sourceTree = "<group>"; };
+		5F37B1FC1F27B28B0088BD29 /* LogPage.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LogPage.storyboard; sourceTree = "<group>"; };
+		5F37B1FE1F27BC1E0088BD29 /* LogPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogPage.swift; sourceTree = "<group>"; };
+		5F37B2011F27BDB00088BD29 /* LogPageTable.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LogPageTable.storyboard; sourceTree = "<group>"; };
+		5F37B2031F27BE110088BD29 /* LogPageTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogPageTable.swift; sourceTree = "<group>"; };
+		5F37B2061F27BFC40088BD29 /* LogPageTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogPageTableCell.swift; sourceTree = "<group>"; };
 		5F467FA31F2673D600D57F8F /* UserProfileService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileService.swift; sourceTree = "<group>"; };
 		5F467FA51F2674B100D57F8F /* BaseRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseRepository.swift; sourceTree = "<group>"; };
 		5F467FA81F26879100D57F8F /* StaticData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaticData.swift; sourceTree = "<group>"; };
@@ -164,6 +176,33 @@
 			name = Components;
 			sourceTree = "<group>";
 		};
+		5F37B1FB1F27B26E0088BD29 /* LogPage */ = {
+			isa = PBXGroup;
+			children = (
+				5F37B1FC1F27B28B0088BD29 /* LogPage.storyboard */,
+				5F37B1FE1F27BC1E0088BD29 /* LogPage.swift */,
+			);
+			name = LogPage;
+			sourceTree = "<group>";
+		};
+		5F37B2001F27BDA10088BD29 /* LogPageTable */ = {
+			isa = PBXGroup;
+			children = (
+				5F37B2051F27BF620088BD29 /* components */,
+				5F37B2011F27BDB00088BD29 /* LogPageTable.storyboard */,
+				5F37B2031F27BE110088BD29 /* LogPageTable.swift */,
+			);
+			name = LogPageTable;
+			sourceTree = "<group>";
+		};
+		5F37B2051F27BF620088BD29 /* components */ = {
+			isa = PBXGroup;
+			children = (
+				5F37B2061F27BFC40088BD29 /* LogPageTableCell.swift */,
+			);
+			name = components;
+			sourceTree = "<group>";
+		};
 		5F467FA21F2673C100D57F8F /* UserProfileService */ = {
 			isa = PBXGroup;
 			children = (
@@ -193,6 +232,8 @@
 		5F55B6551F263BAD0075C46C /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				5F37B2001F27BDA10088BD29 /* LogPageTable */,
+				5F37B1FB1F27B26E0088BD29 /* LogPage */,
 				5F55B65F1F2644E50075C46C /* ProfileReviewPage */,
 				5F55B6561F263BBC0075C46C /* ProfilePage */,
 			);
@@ -239,6 +280,7 @@
 			children = (
 				5F55B6681F2657CE0075C46C /* UserProfile.swift */,
 				5F55B66B1F2658B80075C46C /* ProfileReview.swift */,
+				5F37B1F91F27AF5E0088BD29 /* LogEntry.swift */,
 			);
 			name = Profile;
 			sourceTree = "<group>";
@@ -448,6 +490,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F37B2021F27BDB00088BD29 /* LogPageTable.storyboard in Resources */,
+				5F37B1FD1F27B28B0088BD29 /* LogPage.storyboard in Resources */,
 				5FDAF20B1F23A59A00E77475 /* LoginSelector.storyboard in Resources */,
 				5F55B6581F263BCC0075C46C /* ProfilePage.storyboard in Resources */,
 				5F577B2B1F24267A0030DD9C /* LoginPage.storyboard in Resources */,
@@ -569,6 +613,7 @@
 				5F55B6491F25A4DD0075C46C /* AppNavigationHelper.swift in Sources */,
 				5F55B66E1F265D750075C46C /* ProfileReviewTableViewCell.swift in Sources */,
 				5F5645121F239B8300C4D645 /* AppDelegate.swift in Sources */,
+				5F37B2071F27BFC40088BD29 /* LogPageTableCell.swift in Sources */,
 				5FDAF20D1F23BCD900E77475 /* SocialMediaLoginButton.swift in Sources */,
 				5F577B3E1F25966C0030DD9C /* MapPage.swift in Sources */,
 				5F467FA61F2674B100D57F8F /* BaseRepository.swift in Sources */,
@@ -577,6 +622,8 @@
 				5F55B6691F2657CE0075C46C /* UserProfile.swift in Sources */,
 				5F55B6641F26455A0075C46C /* ProfileReviewPage.swift in Sources */,
 				5F55B6661F2650F90075C46C /* Artwork.swift in Sources */,
+				5F37B1FA1F27AF5E0088BD29 /* LogEntry.swift in Sources */,
+				5F37B2041F27BE110088BD29 /* LogPageTable.swift in Sources */,
 				5F467FA91F26879100D57F8F /* StaticData.swift in Sources */,
 				5F467FA41F2673D600D57F8F /* UserProfileService.swift in Sources */,
 				5F577B2D1F24ED510030DD9C /* LoginPage.swift in Sources */,
@@ -587,6 +634,7 @@
 				5FDAF20F1F23BD3500E77475 /* SocialMediaLoginType.swift in Sources */,
 				5F577B311F24FDEC0030DD9C /* LoginService.swift in Sources */,
 				5F55B65C1F263E940075C46C /* UIImageViewExtensions.swift in Sources */,
+				5F37B1FF1F27BC1E0088BD29 /* LogPage.swift in Sources */,
 				5F577B331F24FF020030DD9C /* LoginViewModel.swift in Sources */,
 				5F55B66C1F2658B80075C46C /* ProfileReview.swift in Sources */,
 			);
