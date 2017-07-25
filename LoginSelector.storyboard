@@ -29,7 +29,7 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uoD-jv-lQi" userLabel="facebookButton" customClass="SocialMediaLoginButton" customModule="HelpMeOut" customModuleProvider="target">
                                 <rect key="frame" x="59" y="369" width="297" height="62"/>
-                                <state key="normal" backgroundImage="facebook"/>
+                                <state key="normal" backgroundImage="facebookButton"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="loginType" value="facebook"/>
                                 </userDefinedRuntimeAttributes>
@@ -39,7 +39,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GXk-1J-Nhe" userLabel="googleButton" customClass="SocialMediaLoginButton" customModule="HelpMeOut" customModuleProvider="target">
                                 <rect key="frame" x="59" y="456" width="297" height="62"/>
-                                <state key="normal" backgroundImage="google"/>
+                                <state key="normal" backgroundImage="googleButton"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="loginType" value="google"/>
                                 </userDefinedRuntimeAttributes>
@@ -52,7 +52,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="LkC-3j-nGI" secondAttribute="height" multiplier="297:62" id="h2n-Ub-3H6"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="outlook"/>
+                                <state key="normal" backgroundImage="outlookButton"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="loginType" value="outlook"/>
                                 </userDefinedRuntimeAttributes>
@@ -118,9 +118,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="MainBackground" width="387" height="694"/>
-        <image name="facebook" width="823" height="195"/>
-        <image name="google" width="823" height="195"/>
-        <image name="outlook" width="823" height="195"/>
+        <image name="MainBackground" width="5197" height="9192"/>
+        <image name="facebookButton" width="1085" height="265"/>
+        <image name="googleButton" width="1085" height="265"/>
+        <image name="outlookButton" width="1085" height="265"/>
     </resources>
 </document>

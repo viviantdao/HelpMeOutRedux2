@@ -76,7 +76,6 @@
                                         <constraint firstItem="mek-oe-2pc" firstAttribute="leading" secondItem="lfb-eh-1q1" secondAttribute="leading" id="g05-Pa-K6X"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="0aG-6n-XyG" secondAttribute="bottom" constant="0.5" id="rYZ-yQ-fmc"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="cRg-Q3-vl6" secondAttribute="trailing" id="vpS-mH-Ap2"/>
-                                        <constraint firstItem="cRg-Q3-vl6" firstAttribute="height" secondItem="mek-oe-2pc" secondAttribute="height" id="wsm-TJ-iAV"/>
                                         <constraint firstItem="lfb-eh-1q1" firstAttribute="leading" secondItem="0ba-a0-0SB" secondAttribute="leadingMargin" constant="72" id="yLH-rx-Ibg"/>
                                     </constraints>
                                 </tableViewCellContentView>
